@@ -13,6 +13,6 @@
         Uso do barcodescanner. 
     </description>
 
-  <gap:plugin name="com.phonegap.plugins.barcodescanner" version="1.1.0" />
+  <gap:plugin name="com.phonegap.plugins.barcodescanner"/>
 
 </widget>
