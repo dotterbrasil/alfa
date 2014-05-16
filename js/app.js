@@ -7,11 +7,11 @@ function init() {
 
 function startScan() {
 alert("teste");
-	var scanner = cordova.require("cordova/plugin/BarcodeScanner");
+	var scanner = cordova.require("cordova/plugin/BarcodeScanner");alert("agora vai");
 	scanner.scan(
 		function (result) {
-			var s = "Result: " + result.text + "<br/>" +
-			"Format: " + result.format + "<br/>" +
+			var s = "Result: " + result.text + "\n" +
+			"Format: " + result.format + "\n" +
 			"Cancelled: " + result.cancelled;
 	alert("hey: "+s);
 			resultDiv.innerHTML = s;
