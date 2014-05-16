@@ -8,7 +8,8 @@ function init() {
 
 function startScan() {
 alert("teste");
-	cordova.plugins.barcodeScanner.scan(
+	var scanner = cordova.require("cordova/plugin/BarcodeScanner");
+	scanner.scan(
 		function (result) {
 			var s = "Result: " + result.text + "<br/>" +
 			"Format: " + result.format + "<br/>" +
