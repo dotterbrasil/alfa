@@ -13,6 +13,7 @@ alert("teste");
 			var s = "Result: " + result.text + "<br/>" +
 			"Format: " + result.format + "<br/>" +
 			"Cancelled: " + result.cancelled;
+	alert("hey: "+s);
 			resultDiv.innerHTML = s;
 		}, 
 		function (error) {
