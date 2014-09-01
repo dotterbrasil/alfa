@@ -14,11 +14,11 @@ lote = "";
 for (i=0;i<4;i++) {
 	if (n.substring(0,1)==separador) {n = n.substring(1,n.length);}
 	if (i==0) {
-		campo = n.substring(0,3);alert("campo 713");
+		campo = n.substring(0,3);
 		}
 		else
 		{
-		campo = n.substring(0,2);alert("outros campos");
+		campo = n.substring(0,2);
 		}
 	fim_de_campo = n.indexOf(separador);
 	if(fim_de_campo<0){fim_de_campo = n.length;}
@@ -34,7 +34,7 @@ for (i=0;i<4;i++) {
 		break;
 	case "17":
 		validade = n.substring(2,8);
-		validade = n.substring(6,2)+"/"+n.substring(4,2)+"/"+n.substring(2,2)
+		validade = n.substring(6,8)+"/"+n.substring(4,6)+"/"+n.substring(2,4)
 		n = n.substring(8,n.length);
 		break;
 	case "10":
