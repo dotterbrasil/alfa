@@ -11,7 +11,11 @@ function startScan() {
 	scanner.scan(
 		function (result) {
 			var s = "Result: " + result.text + "\n" +
+<<<<<<< HEAD
 			"Format: " + result.format + "\n" /*+"Cancelled: " + result.cancelled*/;
+=======
+			"Format: " + result.format + "\n"; /*+"Cancelled: " + result.cancelled;*/
+>>>>>>> b2914831c8b4bf1cc300ac52d45ff53893514dbe
 	alert("hey: "+s);
 			resultDiv.innerHTML = s;
 			separa(result.text);
