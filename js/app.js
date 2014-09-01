@@ -6,13 +6,12 @@ function init() {
 }
 
 function startScan() {
-alert("teste");
-	var scanner = cordova.require("cordova/plugin/BarcodeScanner");alert("agora vai");
+
+	var scanner = cordova.require("cordova/plugin/BarcodeScanner");
 	scanner.scan(
 		function (result) {
 			var s = "Result: " + result.text + "\n" +
-			"Format: " + result.format + "\n" +
-			"Cancelled: " + result.cancelled;
+			"Format: " + result.format + "\n"; /*+"Cancelled: " + result.cancelled;*/
 	alert("hey: "+s);
 			resultDiv.innerHTML = s;
 		}, 
