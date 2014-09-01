@@ -59,13 +59,17 @@ function init() {
 function startScan() {
 
 	var scanner = cordova.require("cordova/plugin/BarcodeScanner");
+	var aux = "";
+
 	scanner.scan(
 		function (result) {
 			var s = "Result: " + result.text + "\n" +
 			"Format: " + result.format + "\n" /*+"Cancelled: " + result.cancelled*/;
 	alert("hey: "+s);
-			resultDiv.innerHTML = s;alert("separando...");
-			separa(result.text);
+			resultDiv.innerHTML = s;
+			aux = result.text;
+			alert("separando...");
+			separa(aux);
 		}, 
 		function (error) {
 			alert("Scanning failed: " + error);
