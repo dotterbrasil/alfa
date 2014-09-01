@@ -13,7 +13,13 @@ lote = "";
 
 for (i=0;i<4;i++) {
 	if (n.substring(0,1)==separador) {n = n.substring(1,n.length);}
-	campo = n.substring(0,2);
+	if (i=0) {
+		campo = n.substring(0,3);alert("campo 713");
+		}
+		else
+		{
+		campo = n.substring(0,2);alert("outros campos");
+		}
 	fim_de_campo = n.indexOf(separador);
 	if(fim_de_campo<0){fim_de_campo = n.length;}
 	switch(campo)
@@ -35,7 +41,7 @@ for (i=0;i<4;i++) {
 		n = n.substring(fim_de_campo,n.length);
 		break;
 	case "713":
-		reg_anvisa = n.substring(2,fim_de_campo);
+		reg_anvisa = n.substring(3,fim_de_campo);
 		n = n.substring(fim_de_campo,n.length);
 		break;
 
