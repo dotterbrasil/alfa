@@ -33,8 +33,8 @@ for (i=0;i<4;i++) {
 		n = n.substring(fim_de_campo,n.length);
 		break;
 	case "17":
-		validade = n.substring(2,8);
-		n = n.substring(8,n.length);
+		validade = n.substring(2,6);
+		n = n.substring(6,n.length);
 		break;
 	case "10":
 		lote = n.substring(2,fim_de_campo);
@@ -51,7 +51,7 @@ for (i=0;i<4;i++) {
 		break;
 		}
 }
-alert("GTIN: "+GTIN+"\n"+"Serial: "+serial+"\n"+"Lote: "+lote+"\n"+"Validade: "+validade);
+alert("GTIN: "+GTIN+"\n"+"Reg. ANVISA: "+reg_anvisa+"\n"+"Serial: "+serial+"\n"+"Lote: "+lote+"\n"+"Validade: "+validade);
 
 
 }
