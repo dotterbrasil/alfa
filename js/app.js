@@ -1,27 +1,5 @@
 var resultDiv;
 
-document.addEventListener("deviceready", init, false);
-function init() {
-	resultDiv = document.getElementByid('results');
-}
-
-function startScan() {
-
-	var scanner = cordova.require("cordova/plugin/BarcodeScanner");
-	scanner.scan(
-		function (result) {
-			var s = "Result: " + result.text + "\n" +
-			"Format: " + result.format + "\n" /*+"Cancelled: " + result.cancelled*/;
-	alert("hey: "+s);
-			resultDiv.innerHTML = s;
-			separa(result.text);
-		}, 
-		function (error) {
-			alert("Scanning failed: " + error);
-		}
-	);
-
-}
 
 function separa(n) {
 
@@ -71,3 +49,28 @@ alert("GTIN: "+GTIN+"\n"+"Serial: "+serial+"\n"+"Lote: "+lote+"\n"+"Validade: "+
 
 
 }
+
+
+document.addEventListener("deviceready", init, false);
+function init() {
+	resultDiv = document.getElementByid('results');
+}
+
+function startScan() {
+
+	var scanner = cordova.require("cordova/plugin/BarcodeScanner");
+	scanner.scan(
+		function (result) {
+			var s = "Result: " + result.text + "\n" +
+			"Format: " + result.format + "\n" /*+"Cancelled: " + result.cancelled*/;
+	alert("hey: "+s);
+			resultDiv.innerHTML = s;alert("separando...");
+			separa(result.text);
+		}, 
+		function (error) {
+			alert("Scanning failed: " + error);
+		}
+	);
+
+}
+
