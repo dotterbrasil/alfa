@@ -66,7 +66,7 @@ function startScan() {
 			var s = "Result: " + result.text + "\n" +
 			"Format: " + result.format + "\n" /*+"Cancelled: " + result.cancelled*/;
 	alert("hey: "+s);
-			resultDiv.innerHTML = s;
+			/*resultDiv.innerHTML = s;*/
 			aux = result.text;
 			alert("separando...");
 			separa(aux);
