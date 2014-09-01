@@ -33,8 +33,9 @@ for (i=0;i<4;i++) {
 		n = n.substring(fim_de_campo,n.length);
 		break;
 	case "17":
-		validade = n.substring(2,6);
-		n = n.substring(6,n.length);
+		validade = n.substring(2,8);
+		validade = n.substring(6,2)+"/"+n.substring(4,2)+"/"+n.substring(2,2)
+		n = n.substring(8,n.length);
 		break;
 	case "10":
 		lote = n.substring(2,fim_de_campo);
