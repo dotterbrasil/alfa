@@ -13,7 +13,7 @@ lote = "";
 
 for (i=0;i<4;i++) {
 	if (n.substring(0,1)==separador) {n = n.substring(1,n.length);}
-	if (i=0) {
+	if (i==0) {
 		campo = n.substring(0,3);alert("campo 713");
 		}
 		else
